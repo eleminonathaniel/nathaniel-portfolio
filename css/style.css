@@ -56,7 +56,17 @@ a {
     color: var(--accent);
 }
 
-/* Hero Section */
+/* -------------- Mobile ---------------- */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    color: var(--text);
+    font-size: 1.8rem;
+    cursor: pointer;
+}
+
+/* -------------- Hero Section ----------*/
 .hero {
     min-height: 100vh;
     display: flex;
@@ -246,5 +256,26 @@ section {
 
     .skills {
         justify-content: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .nav-links {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: center;
+        gap: 20px;
+        padding: 25px 0;
+        background: var(--bg);
+    }
+
+    .nav-links.open {
+        display: flex;
     }
 }
